@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Syne:wght@700&display=swap');
+
+:root {
+  --main-bg-color: #51344d;
+  --primary-text-color: white;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  z-index: -100;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App-body {
+  background-color: var(--main-bg-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(0, 0, 0);
 }
+
+h1{
+  font-family: 'Syne', sans-serif;
+}
+
+p {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+h1, p, a {
+  color: var(--primary-text-color);
+  font-size: 1.3rem;
+}
+
+.Wrapper-75{
+  margin: 0;
+  height: 75vh;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.Wrapper-100{
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  padding: 3rem 3rem;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.fill-img {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), var(--main-bg-color) 120%), url('./media/esther-verdu-z3I6QNClKLk-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.fill-img > div {
+  flex: 1 1 0px;
+}
+
+.Title-h1 {
+  font-size: 4rem;
+  display: inline-block;
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .fill-img > * {
+    animation: Fade-in 1s cubic-bezier(0.33, 1, 0.68, 1);
+  }
+}
+
 
 .App-link {
-  color: #61dafb;
+  color: #686868;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes Fade-in {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  90% {
+    opacity: 100%;
   }
 }
