@@ -1,17 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Syne:wght@700&display=swap');
-
-:root {
-  --main-bg-color: #51344d;
-  --primary-text-color: white;
-
-}
+@import "vars.css";
 
 body {
   z-index: -100;
 }
 
 .App-body {
-  background-color: var(--main-bg-color);
+  background-color: var(--primary-bg-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -33,13 +27,19 @@ h1, p, a {
   font-size: 1.3rem;
 }
 
+.Wrapper-max-width {
+  max-width: 72rem;
+}
+
 .Wrapper-75{
   margin: 0;
   height: 75vh;
+  max-height: 36rem;
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
   display: flex;
+  justify-content: center;
 }
 
 .Wrapper-100{
@@ -55,28 +55,56 @@ h1, p, a {
   justify-content: flex-end;
 }
 
-.fill-img {
-  background-image: linear-gradient(rgba(255, 255, 255, 0), var(--main-bg-color) 120%), url('./media/esther-verdu-z3I6QNClKLk-unsplash.jpg');
+.Home-fill-img {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), var(--primary-bg-color) 120%), url('./media/esther-verdu-z3I6QNClKLk-unsplash.jpg');
   background-size: cover;
   background-position: center;
 }
 
-.fill-img > div {
+.flex {
+  display:flex;
+}
+
+.Home-fill-img > .Wrapper-max-width > div {
   flex: 1 1 0px;
 }
 
-.Title-h1 {
+.Home-title-h1 {
   font-size: 4rem;
-  display: inline-block;
   margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .fill-img > * {
-    animation: Fade-in 1s cubic-bezier(0.33, 1, 0.68, 1);
-  }
+.Card-wrapper {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.Card-wrapper > .Card:nth-child(n + 2) {
+  margin-left: -8rem;
+}
+
+.Card-wrapper > .Card:nth-child(1) {
+  transform: rotate(-2deg);
+}
+
+.Card-wrapper > .Card:nth-child(2) {
+  transform: rotate(3deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Home-fill-img > .Wrapper-max-width > :nth-child(1) > * {
+    animation: Fade-in 1s cubic-bezier(0.33, 1, 0.68, 1);
+  }
+  .Card-wrapper > .Card {
+    transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+  }
+  .Card-wrapper:hover > .Card {
+    margin-left: 0;
+  }
+}
 
 .App-link {
   color: #686868;
