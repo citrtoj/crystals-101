@@ -1,9 +1,12 @@
-/* AppTools nostalgia... */
-
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Syne:wght@700&display=swap');
 
 :root {
   --primary-bg-color: #6153CC;
-  --secondary-bg-color: #ceccef;
+  --primary-bg-color-light: #ceccef;
+  --secondary-bg-color: #ffecd1;
   --primary-text-color: white;
+}
+
+.bg-light {
+  background-color: var(--primary-bg-color-light);
 }

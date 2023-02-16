@@ -4,7 +4,7 @@
     width: 200px;
     height: 300px;
     overflow: hidden;
-    background-color: var(--secondary-bg-color);
+    background-color: var(--primary-bg-color-light);
     border-radius: 0.3rem;
     display: flex;
     flex-direction: column;
@@ -37,6 +37,10 @@
     padding: 1rem;
     height: 100px;
     object-fit: contain;
+    transition: 0.5s;
+}
+
+.Card:hover img {
     opacity: 92%;
-    filter: saturate(120%) brightness(150%) grayscale(20%) drop-shadow(0px 0px 10px rgb(255, 255, 255))
+    filter: saturate(120%) contrast(60%) brightness(150%) grayscale(20%) drop-shadow(0px 0px 10px rgb(255, 255, 255));
 }

@@ -35,21 +35,36 @@ function Home() {
             </div>
           </div>
           
-          <div className='Wrapper-center'>
-            <div className='Wrapper-max-width'>
-              <div className='flex-column text-center'>
+          <div className='flex-center'>
+            <div className='Wrapper-max-width flex-align-right flex-equal-width'>
+              <div className='flex-column'>
+                
+              </div>
+              <div className="flex-column">
+                <h1>
+                  Why use healing crystals?
+                </h1>
                 <p>
-                  Filter options:
-                </p>
-                <p>
-                  BUTTONS       |      HERE
-                </p>
-                <p>
-                  OTHER      |       BUTTONS       |      HERE
+                There are a number of different types of crystals out there. Some people believe they have healing abilities for the mind, body, and soul.
+
+In fact, many ancient cultures — including Egypt, Greece, and China — believed that crystals have healing properties.
+
+Some people claim that crystals promote the flow of good energy and help rid your body and mind of negative energy for physical and emotional benefits.
+
+However, it’s important to know that there’s almost no scientific evidence to support the use of crystals. 
                 </p>
               </div>
             </div>
           </div>
+
+          <div className="Wrapper-75 bg-light flex-center">
+            <div className="Wrapper-max-width">
+              <div className="flex-column">
+                <p>Test</p>
+              </div>
+            </div>
+          </div>
+
         </div>
         
     )

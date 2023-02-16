@@ -25,23 +25,45 @@ p {
   font-family: 'Space Grotesk', sans-serif;
 }
 
-h1, p, a {
+h1, p {
   color: var(--primary-text-color);
   font-size: 1.3rem;
 }
 
-
 .Wrapper-max-width {
+  width: 100%;
   max-width: 72rem;
-}
-
-.Wrapper-center {
-  display: flex;
-  justify-content: center;
 }
 
 .text-center {
   text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-align-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.flex-equal-width {
+  flex: 1 1 0px;
+}
+
+.flex-column {
+  width: 100%;
+  display: flex;
+  padding: 3rem 3rem;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .Wrapper-75{
@@ -61,23 +83,12 @@ h1, p, a {
   width: 100%;
 }
 
-.flex-column {
-  display: flex;
-  padding: 3rem 3rem;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
 .Home-fill-img {
   width: 100vw;
   overflow: hidden;
   background-image: linear-gradient(rgba(255, 255, 255, 0), var(--primary-bg-color) 120%), url('./media/esther-verdu-z3I6QNClKLk-unsplash.jpg');
   background-size: cover;
   background-position: center;
-}
-
-.flex {
-  display: flex;
 }
 
 .Home-fill-img > .Wrapper-max-width > div {
