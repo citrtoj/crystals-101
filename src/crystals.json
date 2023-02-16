@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Clear quartz",
+        "id": "clear-quartz",
+        "desc": "a clear crystal considered a master healer and believed to support the entire energetic system",
+        "tags": ["clear", "health", "clarity"],
+        "img": ""
+    },
+    {
+        "name": "Jasper",
+        "id": "jasper",
+        "desc": "a nurturing stone said to provide support during times of stress",
+        "tags": ["red", "health", "strength", "courage"],
+        "img": ""
+    },
+    {
+        "name": "Obsidian",
+        "id": "obsidian",
+        "desc": "believed to help process emotions and experiences and aid in letting go",
+        "tags": ["black", "health", "protection", "cleansing"],
+        "img": ""
+    },
+    {
+        "name": "Amethyst",
+        "id": "amethyst",
+        "desc": "used for healing, purifying, and enhancing willpower",
+        "tags": ["purple", "health", "cleansing", "protection"],
+        "img": ""
+    },
+    {
+        "name": "Bloodstone",
+        "id": "bloodstone",
+        "desc": "said to improve circulation and provide support to blood-related issues",
+        "tags": ["green", "health", "protection", "courage"],
+        "img": ""
+    },
+    {
+        
+    }
+]

@@ -6,8 +6,17 @@
   --secondary-bg-color: #ffecd1;
   --primary-text-color: white;
   --border-radius: 0.3rem;
+  --padding: 3rem;
 }
 
 .bg-light {
   background-color: var(--primary-bg-color-light);
+}
+
+.rounded-corners {
+  border-radius: var(--border-radius);
+}
+
+.padded {
+  padding: var(--padding);
 }
