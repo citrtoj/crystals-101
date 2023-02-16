@@ -5,7 +5,7 @@
     height: 300px;
     overflow: hidden;
     background-color: var(--primary-bg-color-light);
-    border-radius: 0.3rem;
+    border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -26,7 +26,7 @@
     margin: 0.5rem;
     padding: 0.5rem;
     background-color: white;
-    border-radius: 0.3rem;
+    border-radius: var(--border-radius);
 }
 
 .Card-text-wrapper > * {
@@ -42,5 +42,9 @@
 
 .Card:hover img {
     opacity: 92%;
-    filter: saturate(120%) contrast(60%) brightness(150%) grayscale(20%) drop-shadow(0px 0px 10px rgb(255, 255, 255));
+    filter: saturate(120%)
+            contrast(60%)
+            brightness(150%)
+            grayscale(20%)
+            drop-shadow(0px 0px 10px rgb(255, 255, 255));
 }

@@ -48,10 +48,14 @@ h1, p {
   justify-content: center;
 }
 
-.flex-align-right {
+.flex-justify-end {
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
+}
+
+.flex-align-end {
+  display: flex;
+  align-content: flex-end;
 }
 
 .flex-equal-width {
@@ -63,7 +67,6 @@ h1, p {
   display: flex;
   padding: 3rem 3rem;
   flex-direction: column;
-  justify-content: flex-end;
 }
 
 .Wrapper-75{
@@ -130,6 +133,16 @@ h1, p {
 
 .Card-wrapper > .Card:nth-child(2) {
   transform: rotate(3deg);
+}
+
+.Img-wrapper-1 {
+  position: relative;
+  display: block;
+}
+
+.Img-wrapper-1 img {
+  width: 100%;
+  border-radius: var(--border-radius);
 }
 
 @media (prefers-reduced-motion: no-preference) {

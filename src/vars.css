@@ -5,6 +5,7 @@
   --primary-bg-color-light: #ceccef;
   --secondary-bg-color: #ffecd1;
   --primary-text-color: white;
+  --border-radius: 0.3rem;
 }
 
 .bg-light {

@@ -2,13 +2,15 @@ import Card from '../components/Card'
 import img1 from '../media/rose-quartz.png'
 import img2 from '../media/amethyst.png'
 import monoline from '../media/monoline.png'
+import img3 from '../media/esther-verdu-G3ttEY6r7J0-unsplash.jpg'
+import img4 from '../media/edz-norton-780J1cI0Byc-unsplash.jpg'
 
 function Home() {
     return (
         <div>
           <div className={"Wrapper-75 Home-fill-img"}>
             <div className={"Wrapper-max-width flex"}>
-              <div className="flex-column">
+              <div className="flex-column flex-justify-end">
                 <img src={monoline} className="monoline" alt="monoline" />
                 <h1 className='Home-title-h1'>
                   Crystals 101
@@ -36,9 +38,11 @@ function Home() {
           </div>
           
           <div className='flex-center'>
-            <div className='Wrapper-max-width flex-align-right flex-equal-width'>
-              <div className='flex-column'>
-                
+            <div className='Wrapper-max-width flex-align-end flex-equal-width'>
+              <div className='flex-column flex-center'>
+                <div className="Img-wrapper-1">
+                  <img src={img3} alt="crystals" />
+                </div>
               </div>
               <div className="flex-column">
                 <h1>
