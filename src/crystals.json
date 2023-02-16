@@ -24,7 +24,7 @@
         "name": "Amethyst",
         "id": "amethyst",
         "desc": "used for healing, purifying, and enhancing willpower",
-        "tags": ["purple", "health", "cleansing", "protection"],
+        "tags": ["purple", "health", "serenity", "cleansing", "protection"],
         "img": ""
     },
     {
@@ -35,6 +35,59 @@
         "img": ""
     },
     {
-        
+        "name": "Tiger's eye",
+        "id": "tigers-eye",
+        "desc": "said to provide motivation and lessen fear",
+        "tags": ["brown", "wealth", "courage", "strength", "luck"],
+        "img": ""
+    },
+    {
+        "name": "Citrine",
+        "id": "citrine",
+        "desc": "believed to spark enthusiasm, creativity, and concentration",
+        "tags": ["yellow", "wealth", "creativity", "clarity"],
+        "img": ""
+    },
+    {
+        "name": "Turquoise",
+        "id": "turquoise",
+        "desc": "thought to soothe emotions and attract good luck",
+        "tags": ["blue", "wealth", "serenity", "protection", "luck"],
+        "img": ""
+    },
+    {
+        "name": "Sapphire",
+        "id": "sapphire",
+        "desc": "known as a stone of prosperity",
+        "tags": ["blue", "wealth", "wisdom", "focus", "prosperity"],
+        "img": ""
+    },
+    {
+        "name": "Jade",
+        "id": "jade",
+        "desc": "well-known stone for prosperity and luck",
+        "tags": ["green", "wealth", "prosperity", "luck"],
+        "img": ""
+    },
+    {
+        "name": "Rose quartz",
+        "id": "rose-quartz",
+        "desc": "sometimes referred to as the stone of love and believed to encourage love and trust",
+        "tags": ["pink", "love", "trust", "health"],
+        "img": ""
+    },
+    {
+        "name": "Moonstone",
+        "id": "moonstone",
+        "desc": "said to prompt feelings of inner strength and growth",
+        "tags": ["clear", "love", "strength", "energy"],
+        "img": ""
+    },
+    {
+        "name": "Ruby",
+        "id": "ruby",
+        "desc": "believed to support sexuality and sensuality",
+        "tags": ["red", "love", "sensuality"],
+        "img": ""
     }
 ]
