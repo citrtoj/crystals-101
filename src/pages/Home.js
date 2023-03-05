@@ -1,18 +1,16 @@
 import Card from '../components/Card'
 import img1 from '../media/rose-quartz.png'
 import img2 from '../media/amethyst.png'
-import monoline from '../media/monoline.png'
 import img3 from '../media/esther-verdu-G3ttEY6r7J0-unsplash.jpg'
 import img4 from '../media/edz-norton-780J1cI0Byc-unsplash.jpg'
 
 function Home() {
     return (
         <div>
-          <div className={"Wrapper-75 Home-fill-img"}>
-            <div className={"Wrapper-max-width flex"}>
+          <div id="Home-fill-img" className="Wrapper-min-75">
+            <div className="Wrapper-max-width flex">
               <div className="flex-column flex-justify-end">
-                <img src={monoline} className="monoline" alt="monoline" />
-                <h1 className='Home-title-h1'>
+               <h1 id='Home-title-h1'>
                   Crystals 101
                 </h1>
                 <hr/>
@@ -22,16 +20,14 @@ function Home() {
               </div>
               <div className="flex-column">
                 <div className="Card-wrapper">
-                  <Card img={img1} name="Rose Quartz" >
-                    <p>
-                    sometimes referred to as the stone of love and believed to encourage love and trust
-                    </p>
-                  </Card>
-                  <Card img={img2} name="Amethyst">
-                    <p>
-                    used for healing, purifying, and enhancing willpower
-                    </p>
-                  </Card>
+                  <Card img={img1}
+                        name="Rose Quartz"
+                        desc="sometimes referred to as the stone of love and believed to encourage love and trust"
+                        tags={["pink", "love", "trust", "health"]}/>
+                  <Card img={img2}
+                        name="Amethyst"
+                        desc="used for healing, purifying, and enhancing willpower"
+                        tags={["purple", "health", "serenity", "cleansing", "protection"]} />
                 </div>
               </div>
             </div>
@@ -40,7 +36,7 @@ function Home() {
           <div className='flex-center'>
             <div className='Wrapper-max-width flex-align-end flex-equal-width'>
               <div className='flex-column flex-center'>
-                <div className="Img-wrapper-1">
+                <div className="Img-wrapper">
                   <img src={img3} alt="crystals" />
                 </div>
               </div>
@@ -61,7 +57,7 @@ However, it’s important to know that there’s almost no scientific evidence t
             </div>
           </div>
 
-          <div className="Wrapper-75 bg-light flex-center">
+          <div className="Wrapper-min-75 bg-light flex-center">
             <div className="Wrapper-max-width">
               <div className="flex-column">
                 <p>Test</p>

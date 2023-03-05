@@ -18,16 +18,18 @@ body {
 }
 
 h1{
-  font-family: 'Syne', sans-serif;
+  font-family: 'Cormorant Upright', serif;
+  font-size: 1.6rem;
 }
 
-p {
-  font-family: 'Space Grotesk', sans-serif;
+p, a {
+  font-family: 'Space Mono', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2em;
 }
 
 h1, p {
   color: var(--primary-text-color);
-  font-size: 1.3rem;
 }
 
 .Wrapper-max-width {
@@ -69,10 +71,9 @@ h1, p {
   flex-direction: column;
 }
 
-.Wrapper-75{
+.Wrapper-min-75{
   margin: 0;
-  height: 75vh;
-  max-height: 36rem;
+  min-height: 75vh;
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
@@ -86,7 +87,7 @@ h1, p {
   width: 100%;
 }
 
-.Home-fill-img {
+#Home-fill-img {
   width: 100vw;
   overflow: hidden;
   background-image: linear-gradient(rgba(255, 255, 255, 0), var(--primary-bg-color) 120%), url('./media/esther-verdu-z3I6QNClKLk-unsplash.jpg');
@@ -94,23 +95,25 @@ h1, p {
   background-position: center;
 }
 
-.Home-fill-img > .Wrapper-max-width > div {
+#Home-fill-img > .Wrapper-max-width > div {
   flex: 1 1 0px;
 }
 
-.Home-fill-img .monoline {
+#Home-fill-img .monoline {
   filter:invert(1);
   width: 15rem;
   transform: translateY(50%);
 }
 
-.Home-fill-img hr {
+#Home-fill-img hr {
   width: 100%;
-  height: 2rem;
+  height: 3px;
+  background-color: white;
   color: white;
+  border:1px solid black;
 }
 
-.Home-title-h1 {
+#Home-title-h1 {
   font-size: 4rem;
   margin: 0;
 }
@@ -140,20 +143,30 @@ h1, p {
   display: block;
 }
 
-.Img-wrapper-1 img {
+.Img-wrapper img {
   width: 100%;
+  border:1px solid black;
   border-radius: var(--border-radius);
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .Home-fill-img > .Wrapper-max-width > :nth-child(1) > * {
+  #Home-fill-img > .Wrapper-max-width > :nth-child(1) > * {
     animation: Fade-in 1s cubic-bezier(0.33, 1, 0.68, 1);
   }
   .Card-wrapper > .Card {
-    transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+    transition: var(--transition-duration) cubic-bezier(0.33, 1, 0.68, 1);
   }
-  .Card-wrapper:hover > .Card {
-    margin-left: 0;
+  @media only screen and (min-width: 1000px)  {
+    .Card-wrapper:hover > .Card {
+      margin-left: 0;
+    }
+
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #Home-fill-img .flex-column:nth-child(2){
+    display: none;
   }
 }
 

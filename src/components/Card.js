@@ -8,7 +8,12 @@ function Card(props) {
                 <h1>
                     {props.name}
                 </h1>
-                {props.children}
+                <p>
+                    {props.desc}
+                </p>
+                <div className="Card-tag-wrapper">
+                    {props.tags && props.tags.map(tag => <a key={tag} href={"/crystals/" + tag} className="Tag"> {tag} </a> )}
+                </div>
             </div>
         </div>
     )

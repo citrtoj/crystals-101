@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Syne:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&family=Space+Mono:wght@400;700&display=swap');
 
 :root {
   --primary-bg-color: #6153CC;
@@ -7,6 +7,7 @@
   --primary-text-color: white;
   --border-radius: 0.3rem;
   --padding: 3rem;
+  --transition-duration: 0.5s;
 }
 
 .bg-light {
