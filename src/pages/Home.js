@@ -8,7 +8,7 @@ function Home() {
     return (
         <div>
           <div id="Home-fill-img" className="Wrapper-min-75">
-            <div className="Wrapper-max-width flex">
+            <div className="flex Wrapper-max-width">
               <div className="flex-column flex-justify-end">
                <h1 id='Home-title-h1'>
                   Crystals 101
@@ -34,7 +34,7 @@ function Home() {
           </div>
           
           <div className='flex-center'>
-            <div className='Wrapper-max-width flex-align-end flex-equal-width'>
+            <div className='Wrapper-max-width flex-align-end flex-equal-width column-on-mobile'>
               <div className='flex-column flex-center'>
                 <div className="Img-wrapper">
                   <img src={img3} alt="crystals" />

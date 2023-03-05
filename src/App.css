@@ -73,6 +73,7 @@ h1, p {
 
 .Wrapper-min-75{
   margin: 0;
+  min-height: -webkit-calc(75% - 0px);
   min-height: 75vh;
   width: 100%;
   overflow: hidden;
@@ -167,6 +168,10 @@ h1, p {
 @media only screen and (max-width: 750px) {
   #Home-fill-img .flex-column:nth-child(2){
     display: none;
+  }
+
+  .column-on-mobile {
+    flex-direction: column;
   }
 }
 
