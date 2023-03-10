@@ -7,7 +7,7 @@ import img4 from '../media/edz-norton-780J1cI0Byc-unsplash.jpg'
 function Home() {
     return (
         <div>
-          <div id="Home-fill-img" className="Wrapper-min-75">
+          <div id="Home-fill-img" className="Wrapper-center">
             <div className="flex Wrapper-max-width">
               <div className="flex-column flex-justify-end">
                <h1 id='Home-title-h1'>
@@ -41,9 +41,9 @@ function Home() {
                 </div>
               </div>
               <div className="flex-column">
-                <h1>
+                <h2>
                   Why use healing crystals?
-                </h1>
+                </h2>
                 <p>
                 There are a number of different types of crystals out there. Some people believe they have healing abilities for the mind, body, and soul.
 
@@ -57,7 +57,7 @@ However, it’s important to know that there’s almost no scientific evidence t
             </div>
           </div>
 
-          <div className="Wrapper-min-75 bg-light flex-center">
+          <div className="Wrapper-center bg-light">
             <div className="Wrapper-max-width">
               <div className="flex-column">
                 <p>Test</p>

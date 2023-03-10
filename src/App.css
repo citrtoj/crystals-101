@@ -19,17 +19,18 @@ body {
 
 h1{
   font-family: 'Cormorant Upright', serif;
-  font-size: 1.6rem;
+  color: var(--primary-text-color);
 }
-
-p, a {
+h2 {
   font-family: 'Space Mono', sans-serif;
+  color: var(--primary-text-color);
+  font-size: x-large;
+}
+p, a{
+  font-family: 'Space Mono', sans-serif;
+  color: var(--primary-text-color);
   font-size: 1rem;
   line-height: 1.2em;
-}
-
-h1, p {
-  color: var(--primary-text-color);
 }
 
 .Wrapper-max-width {
@@ -39,6 +40,10 @@ h1, p {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .flex {
@@ -65,27 +70,20 @@ h1, p {
 }
 
 .flex-column {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   padding: 3rem;
   flex-direction: column;
 }
 
-.Wrapper-min-75{
+.Wrapper-center{
+  display: flex;
+  justify-content: center;
   margin: 0;
-  min-height: -webkit-calc(75% - 0px);
-  min-height: 75vh;
+  min-height: 100%;
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-}
-
-.Wrapper-100 {
-  margin: 0;
-  height: 100vh;
-  width: 100%;
 }
 
 #Home-fill-img {
@@ -139,9 +137,8 @@ h1, p {
   transform: rotate(3deg);
 }
 
-.Img-wrapper-1 {
-  position: relative;
-  display: block;
+.Img-wrapper {
+  width: fit-content;
 }
 
 .Img-wrapper img {
@@ -166,12 +163,25 @@ h1, p {
 }
 
 @media only screen and (max-width: 750px) {
+
   #Home-fill-img .flex-column:nth-child(2){
     display: none;
   }
 
+  #Home-fill-img .flex-column {
+    padding-top: 16rem; /*i have to put something there i just don't know what yet*/
+  }
+
   .column-on-mobile {
     flex-direction: column;
+  }
+  
+  .column-on-mobile > *:not(:first-child) {
+    padding-top: 0;
+  }
+
+  .column-on-mobile > *:not(:first-child) > *:first-child {
+    margin-top: 0;
   }
 }
 
