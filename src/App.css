@@ -19,6 +19,7 @@ body {
 
 h1{
   font-family: 'Cormorant Upright', serif;
+  font-size: 4rem;
   color: var(--primary-text-color);
 }
 h2 {
@@ -26,16 +27,35 @@ h2 {
   color: var(--primary-text-color);
   font-size: x-large;
 }
-p, a{
+p, a, button{
   font-family: 'Space Mono', sans-serif;
   color: var(--primary-text-color);
   font-size: 1rem;
   line-height: 1.2em;
 }
 
+button {
+  background-color: var(--primary-bg-color-light);
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 5em;
+}
+
 .Wrapper-max-width {
-  width: 100%;
+  width: 100vw;
   max-width: 72rem;
+}
+
+.bg-light {
+  background-color: var(--primary-bg-color-light);
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
 }
 
 .text-center {
@@ -48,6 +68,11 @@ p, a{
 
 .flex {
   display: flex;
+}
+
+.height-100 {
+  min-height: 100%;
+  flex: 1;
 }
 
 .flex-center {
@@ -65,15 +90,30 @@ p, a{
   align-content: flex-end;
 }
 
-.flex-equal-width {
+.flex-equal-width * {
   flex: 1 1 0px;
 }
 
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-stretch > * {
+  align-self: stretch;
+}
+
 .flex-column {
-  max-width: 100%;
   display: flex;
-  padding: 3rem;
   flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: var(--padding);
 }
 
 .Wrapper-center{
@@ -115,6 +155,7 @@ p, a{
 #Home-title-h1 {
   font-size: 4rem;
   margin: 0;
+  text-shadow: 0px 0px 5px white;
 }
 
 .Card-wrapper {
@@ -123,6 +164,10 @@ p, a{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.Card-wrapper > .Card {
+  width: 200px;
 }
 
 .Card-wrapper > .Card:nth-child(n + 2) {
@@ -138,14 +183,47 @@ p, a{
 }
 
 .Img-wrapper {
-  width: fit-content;
-}
-
-.Img-wrapper img {
-  width: 100%;
+  overflow: hidden;
+  display: flex;
   border:1px solid black;
   border-radius: var(--border-radius);
 }
+
+.Img-wrapper img {
+  object-fit:cover;
+  width: 100%;
+}
+
+.Img-main-wrapper{
+  background-color: var(--primary-bg-color-light);
+  border: 2px solid white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.Img-4-3 {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  display: flex;
+}
+
+.Img-4-3 img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.Not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Not-found * {
+  margin: 1rem;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   #Home-fill-img > .Wrapper-max-width > :nth-child(1) > * {
@@ -163,19 +241,22 @@ p, a{
 }
 
 @media only screen and (max-width: 750px) {
+  .justify-center {
+    align-items: center;
+  }
 
   #Home-fill-img .flex-column:nth-child(2){
     display: none;
   }
 
   #Home-fill-img .flex-column {
-    padding-top: 16rem; /*i have to put something there i just don't know what yet*/
+    padding-top: 16rem;
   }
 
   .column-on-mobile {
     flex-direction: column;
   }
-  
+
   .column-on-mobile > *:not(:first-child) {
     padding-top: 0;
   }

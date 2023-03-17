@@ -1,31 +1,34 @@
 [
     {
-        "name": "Clear quartz",
+        "name": "Clear Quartz",
         "id": "clear-quartz",
         "desc": "a clear crystal considered a master healer and believed to support the entire energetic system",
         "tags": ["clear", "health", "clarity"],
-        "img": ""
+        "img": ["https://images.unsplash.com/photo-1599616294823-984fa82c594e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=767&q=80",
+        "https://images.unsplash.com/photo-1678156529666-5017b01a642a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+        ]
     },
     {
         "name": "Jasper",
         "id": "jasper",
         "desc": "a nurturing stone said to provide support during times of stress",
         "tags": ["red", "health", "strength", "courage"],
-        "img": ""
+        "img": ["https://cdn11.bigcommerce.com/s-74zp6w28re/images/stencil/1280x1280/products/5991/37902/new-moon-beginnings-brecciated-red-jasper-tumbled-stone-polished-jasper-crystal-cts-aa127__34295.1635556299.jpg?c=1",
+        "https://cdn11.bigcommerce.com/s-3a63a/images/stencil/1280x1280/products/6639/38643/Rainbow_Jasper_Tumbled_Stones_353_4__31194.1659501805.jpg?c=2?imbypass=on"]
     },
     {
         "name": "Obsidian",
         "id": "obsidian",
         "desc": "believed to help process emotions and experiences and aid in letting go",
         "tags": ["black", "health", "protection", "cleansing"],
-        "img": ""
+        "img": ["https://m.media-amazon.com/images/I/71Jip48NhfL._AC_UF894,1000_QL80_.jpg", "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71a8-Ttbz4L._AC_SX466_.jpg"]
     },
     {
         "name": "Amethyst",
         "id": "amethyst",
         "desc": "used for healing, purifying, and enhancing willpower",
         "tags": ["purple", "health", "serenity", "cleansing", "protection"],
-        "img": ""
+        "img": ["https://i.pinimg.com/564x/36/ae/11/36ae110d1d9d6c1a38b466a808f39981.jpg"]
     },
     {
         "name": "Bloodstone",
@@ -35,7 +38,7 @@
         "img": ""
     },
     {
-        "name": "Tiger's eye",
+        "name": "Tiger's Eye",
         "id": "tigers-eye",
         "desc": "said to provide motivation and lessen fear",
         "tags": ["brown", "wealth", "courage", "strength", "luck"],
@@ -70,11 +73,11 @@
         "img": ""
     },
     {
-        "name": "Rose quartz",
+        "name": "Rose Quartz",
         "id": "rose-quartz",
         "desc": "sometimes referred to as the stone of love and believed to encourage love and trust",
         "tags": ["pink", "love", "trust", "health"],
-        "img": ""
+        "img": ["https://images.unsplash.com/photo-1593259213062-57b0ce5906cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80", "https://plus.unsplash.com/premium_photo-1675855748166-a66d26c3b6da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"]
     },
     {
         "name": "Moonstone",

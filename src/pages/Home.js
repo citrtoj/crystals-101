@@ -2,7 +2,6 @@ import Card from '../components/Card'
 import img1 from '../media/rose-quartz.png'
 import img2 from '../media/amethyst.png'
 import img3 from '../media/esther-verdu-G3ttEY6r7J0-unsplash.jpg'
-import img4 from '../media/edz-norton-780J1cI0Byc-unsplash.jpg'
 
 function Home() {
     return (
@@ -22,10 +21,12 @@ function Home() {
                 <div className="Card-wrapper">
                   <Card img={img1}
                         name="Rose Quartz"
+                        id="rose-quartz"
                         desc="sometimes referred to as the stone of love and believed to encourage love and trust"
                         tags={["pink", "love", "trust", "health"]}/>
                   <Card img={img2}
                         name="Amethyst"
+                        id="amethyst"
                         desc="used for healing, purifying, and enhancing willpower"
                         tags={["purple", "health", "serenity", "cleansing", "protection"]} />
                 </div>

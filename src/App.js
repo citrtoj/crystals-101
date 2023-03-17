@@ -1,12 +1,15 @@
 import './App.css';
 import Home from './pages/Home';
-import Crystals from './pages/Crystals'
+import Crystal from './pages/Crystal'
+import Filter from './pages/Filter';
+import NotFound from './pages/NotFound'
 import {
   BrowserRouter as Router,
   json,
   Redirect,
   Routes,
   Route,
+  Navigate,
   Link
 } from 'react-router-dom';
 
@@ -17,8 +20,10 @@ function App() {
         <Router>
           <Routes>
             <Route exact path="/" element={<Home/>}/>
-            <Route exact path="/crystals/:id" element={<Crystals/>}/>
-            <Route exact path="/filter/tags?" element={<Crystals/>}/>
+            <Route exact path="/crystal/:id" element={<Crystal/>}/>
+            <Route exact path="/filter" element={<Filter/>}/>
+            <Route exact path="/404" element={<NotFound/>}/>
+            <Route path='*' element={<Navigate to='/404' />} />
           </Routes>
         </Router>
       </div>
