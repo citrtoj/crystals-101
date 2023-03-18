@@ -18,7 +18,7 @@ function Home() {
                 </p>
               </div>
               <div className="flex-column">
-                <div className="Card-wrapper">
+                <div className="Home-card-wrapper">
                   <Card img={img1}
                         name="Rose Quartz"
                         id="rose-quartz"

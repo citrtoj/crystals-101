@@ -1,14 +1,22 @@
 import { useParams } from 'react-router-dom';
+import { useState } from 'react';
 import crystals from '../crystals.json'
 import NotFound from './NotFound'
 
 function Crystal() {
     let { id } = useParams();
+
+    let [ idx, setIdx ] = useState(0);
+
     let crystal = crystals.filter( (data) => {
       return data.id === id
-    } )
+    } );
 
-    if (crystal.length === 0) {
+    function handleClick(event) {
+      setIdx(event.target.parentElement.id.split('-')[1]);
+    }
+
+    if (crystal === undefined) {
       return (<NotFound/>)
     }
     else {
@@ -18,7 +26,17 @@ function Crystal() {
             <div className="flex-column justify-center">
               <div className="Img-main-wrapper">
                 <div className="Img-4-3">
-                  <img src={crystal.img[0]} alt={crystal.name} />
+                  <img src={crystal.img[idx]} alt={crystal.name} />
+                </div>
+                <div className="Img-mini-list">
+                  { crystal.img.map( (image, index) => {
+                    return (
+                      <div className="Img-square" id={'img-' + index} key={index}
+                      onClick={(event) => handleClick(event)}>
+                        <img src={image} alt={crystal.name + ` ${index}`} />
+                      </div>
+                    )
+                  } ) }
                 </div>
               </div>
             </div>
@@ -26,9 +44,17 @@ function Crystal() {
               <h1>
                 {crystal.name}
               </h1>
+              <div className="tags flex">
+                {crystal.tags.map( (tag) => (
+                  <div className='Tag'>
+                      {tag}
+                    </div>)
+                ) }
+              </div>
               <p>
                 {crystal.desc}
               </p>
+              
             </div>
           </div>
 

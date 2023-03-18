@@ -28,69 +28,69 @@
         "id": "amethyst",
         "desc": "used for healing, purifying, and enhancing willpower",
         "tags": ["purple", "health", "serenity", "cleansing", "protection"],
-        "img": ["https://i.pinimg.com/564x/36/ae/11/36ae110d1d9d6c1a38b466a808f39981.jpg"]
+        "img": ["https://i.pinimg.com/564x/36/ae/11/36ae110d1d9d6c1a38b466a808f39981.jpg", "https://i0.wp.com/lifewithcrystals.com/wp-content/uploads/2020/09/Deep-Purple3.jpeg?fit=2253%2C2253&ssl=1", "https://i0.wp.com/lifewithcrystals.com/wp-content/uploads/2020/09/Deep-Purple3.jpeg?fit=2253%2C2253&ssl=1"]
     },
     {
         "name": "Bloodstone",
         "id": "bloodstone",
         "desc": "said to improve circulation and provide support to blood-related issues",
         "tags": ["green", "health", "protection", "courage"],
-        "img": ""
+        "img": [""]
     },
     {
         "name": "Tiger's Eye",
         "id": "tigers-eye",
         "desc": "said to provide motivation and lessen fear",
         "tags": ["brown", "wealth", "courage", "strength", "luck"],
-        "img": ""
+        "img": [""]
     },
     {
         "name": "Citrine",
         "id": "citrine",
         "desc": "believed to spark enthusiasm, creativity, and concentration",
         "tags": ["yellow", "wealth", "creativity", "clarity"],
-        "img": ""
+        "img": [""]
     },
     {
         "name": "Turquoise",
         "id": "turquoise",
         "desc": "thought to soothe emotions and attract good luck",
         "tags": ["blue", "wealth", "serenity", "protection", "luck"],
-        "img": ""
+        "img": [""]
     },
     {
         "name": "Sapphire",
         "id": "sapphire",
         "desc": "known as a stone of prosperity",
         "tags": ["blue", "wealth", "wisdom", "focus", "prosperity"],
-        "img": ""
+        "img": [""]
     },
     {
         "name": "Jade",
         "id": "jade",
         "desc": "well-known stone for prosperity and luck",
         "tags": ["green", "wealth", "prosperity", "luck"],
-        "img": ""
+        "img": [""]
     },
     {
         "name": "Rose Quartz",
         "id": "rose-quartz",
         "desc": "sometimes referred to as the stone of love and believed to encourage love and trust",
         "tags": ["pink", "love", "trust", "health"],
-        "img": ["https://images.unsplash.com/photo-1593259213062-57b0ce5906cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80", "https://plus.unsplash.com/premium_photo-1675855748166-a66d26c3b6da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"]
+        "img": ["https://images.unsplash.com/photo-1593259213062-57b0ce5906cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80", "https://www.earthboundtrading.com/media/catalog/product/6/2/62254-crystalrosequartzheart-331-hero.jpg?quality=90&bg-color=255,255,255&fit=bounds&height=1050&width=700&canvas=700:1050", "https://mysticjungle.co.uk/wp-content/uploads/2020/11/il_fullxfull.2338056181_g5e1-scaled.jpg"]
     },
     {
         "name": "Moonstone",
         "id": "moonstone",
         "desc": "said to prompt feelings of inner strength and growth",
         "tags": ["clear", "love", "strength", "energy"],
-        "img": ""
+        "img": [""]
     },
     {
         "name": "Ruby",
         "id": "ruby",
         "desc": "believed to support sexuality and sensuality",
         "tags": ["red", "love", "sensuality"],
-        "img": ""
+        "img": [""]
     }
 ]

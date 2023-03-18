@@ -110,7 +110,6 @@ button {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  position: relative;
   display: flex;
   justify-content: center;
   padding: var(--padding);
@@ -158,7 +157,7 @@ button {
   text-shadow: 0px 0px 5px white;
 }
 
-.Card-wrapper {
+.Home-card-wrapper {
   max-width: 100%;
   height: 100%;
   display: flex;
@@ -166,20 +165,31 @@ button {
   justify-content: center;
 }
 
-.Card-wrapper > .Card {
+.Home-card-wrapper > .Card {
   width: 200px;
 }
 
-.Card-wrapper > .Card:nth-child(n + 2) {
+.Home-card-wrapper > .Card:nth-child(n + 2) {
   margin-left: -8rem;
 }
 
-.Card-wrapper > .Card:nth-child(1) {
+.Home-card-wrapper > .Card:nth-child(1) {
   transform: rotate(-2deg);
 }
 
-.Card-wrapper > .Card:nth-child(2) {
+.Home-card-wrapper > .Card:nth-child(2) {
   transform: rotate(3deg);
+}
+
+.Filter-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Filter-card-wrapper > .Card {
+  width: 180px;
+  margin: calc(var(--padding) / 4);
 }
 
 .Img-wrapper {
@@ -195,18 +205,50 @@ button {
 }
 
 .Img-main-wrapper{
+  display: flex;
+  flex-direction: column;
   background-color: var(--primary-bg-color-light);
   border: 2px solid white;
   border-radius: 5px;
   overflow: hidden;
+  padding: calc(var(--padding) / 2);
 }
-.Img-4-3 {
-  aspect-ratio: 4/3;
+
+.Img-mini-list {
+  margin-top: calc(var(--padding) / 2);
+  display: flex;
+}
+.Img-mini-list > *{
+  flex: 0 1 3rem;
+  transition: 0.5s;
+}
+
+.Img-mini-list > *:hover {
+  cursor: pointer;
+  filter:contrast(30%) brightness(150%);
+}
+
+.Img-mini-list > *:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
+.Img-square {
+  aspect-ratio: 1 / 1;
+  border: 2px solid white;
+  border-radius: 5px;
   overflow: hidden;
   display: flex;
 }
 
-.Img-4-3 img {
+.Img-4-3 {
+  aspect-ratio: 4/3;
+  border: 2px solid white;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+}
+
+.Img-4-3 img, .Img-square img {
   object-fit: cover;
   width: 100%;
 }
@@ -229,11 +271,11 @@ button {
   #Home-fill-img > .Wrapper-max-width > :nth-child(1) > * {
     animation: Fade-in 1s cubic-bezier(0.33, 1, 0.68, 1);
   }
-  .Card-wrapper > .Card {
+  .Home-card-wrapper > .Card {
     transition: var(--transition-duration) cubic-bezier(0.33, 1, 0.68, 1);
   }
   @media only screen and (min-width: 1000px)  {
-    .Card-wrapper:hover > .Card {
+    .Home-card-wrapper:hover > .Card {
       margin-left: 0;
     }
 
@@ -241,9 +283,6 @@ button {
 }
 
 @media only screen and (max-width: 750px) {
-  .justify-center {
-    align-items: center;
-  }
 
   #Home-fill-img .flex-column:nth-child(2){
     display: none;

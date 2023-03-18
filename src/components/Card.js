@@ -1,7 +1,7 @@
 import './Card.css'
 import { useNavigate } from 'react-router-dom';
 function Card(props) {
-    let path = 'crystal/' + props.id;
+    let path = '/crystal/' + props.id;
     let navigate = useNavigate(); 
     function routeChange(event) {
         event.preventDefault();
