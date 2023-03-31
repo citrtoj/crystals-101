@@ -41,18 +41,18 @@ function Home() {
                   <img src={img3} alt="crystals" />
                 </div>
               </div>
-              <div className="flex-column">
+              <div className="flex-column flex-column-text">
                 <h2>
                   Why use healing crystals?
                 </h2>
                 <p>
-                There are a number of different types of crystals out there. Some people believe they have healing abilities for the mind, body, and soul.
+                There are plenty of types of crystals, and some people believe they have healing abilities.
 
-In fact, many ancient cultures — including Egypt, Greece, and China — believed that crystals have healing properties.
+In fact, many ancient cultures believed crystals have healing properties.
 
-Some people claim that crystals promote the flow of good energy and help rid your body and mind of negative energy for physical and emotional benefits.
+Some claim crystals promote energy flow and help rid your body and mind of negative energy.
 
-However, it’s important to know that there’s almost no scientific evidence to support the use of crystals. 
+However, there’s almost no scientific evidence to support their use. 
                 </p>
               </div>
             </div>

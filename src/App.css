@@ -26,12 +26,14 @@ h2 {
   font-family: var(--font-sans-serif);
   color: var(--primary-text-color);
   font-size: x-large;
+  margin-bottom: 0;
 }
 p, a, button{
   font-family: var(--font-sans-serif);
   color: var(--primary-text-color);
+  line-height: 1.2rem;
+  box-sizing: content-box;
   font-size: 1rem;
-  line-height: 1.2em;
 }
 
 button {
@@ -81,8 +83,7 @@ input[type="text"]:focus, input[type="checkbox"]:focus {
 }
 
 .height-100 {
-  min-height: 100%;
-  flex: 1;
+  min-height: 100vh;
 }
 
 .flex-center {
@@ -123,6 +124,14 @@ input[type="text"]:focus, input[type="checkbox"]:focus {
   display: flex;
   justify-content: center;
   padding: var(--padding);
+}
+
+.flex-column-text {
+  justify-content: flex-end;
+}
+.flex-column-text h2 {
+  margin-bottom: 0;
+  justify-content: flex-end;
 }
 
 .Wrapper-center{
@@ -353,6 +362,11 @@ input.Filter-search-input {
 
   .column-on-mobile {
     flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .column-on-mobile > * {
+    padding: 2rem;
   }
 
   .column-on-mobile > *:not(:first-child) {
