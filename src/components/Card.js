@@ -51,7 +51,7 @@ function Card(props) {
                         </h6>
                     </a>
                     <input className="Heart" id={"heart-" + props.id}  defaultChecked={setDefaultChecked()} onChange={(event) => {handleHeartCheck(event);}} type="checkbox"/>
-                    <label className="forHeart" htmlFor={"heart-" + props.id}>❤</label>
+                    <label className="forHeart" htmlFor={"heart-" + props.id}>♡</label>
                 <p>
                     {props.desc}
                 </p>
