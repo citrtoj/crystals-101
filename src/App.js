@@ -5,12 +5,9 @@ import Filter from './pages/Filter';
 import NotFound from './pages/NotFound'
 import {
   BrowserRouter as Router,
-  json,
-  Redirect,
   Routes,
   Route,
   Navigate,
-  Link
 } from 'react-router-dom';
 
 function App() {

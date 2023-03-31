@@ -28,49 +28,49 @@
         "id": "amethyst",
         "desc": "used for healing, purifying, and enhancing willpower",
         "tags": ["purple", "health", "serenity", "cleansing", "protection"],
-        "img": ["https://i.pinimg.com/564x/36/ae/11/36ae110d1d9d6c1a38b466a808f39981.jpg", "https://i0.wp.com/lifewithcrystals.com/wp-content/uploads/2020/09/Deep-Purple3.jpeg?fit=2253%2C2253&ssl=1", "https://i0.wp.com/lifewithcrystals.com/wp-content/uploads/2020/09/Deep-Purple3.jpeg?fit=2253%2C2253&ssl=1"]
+        "img": ["https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61DuO-A4TfL._AC_UF894,1000_QL80_.jpg", "https://mlrp5ihl5u2k.i.optimole.com/w:800/h:800/q:mauto/rt:fill/g:ce/f:avif/https://hellaholics.com/wp-content/uploads/2020/11/pendulum-amethyst-necklace-hellaholics-mood.jpg", "https://64.media.tumblr.com/e1a31db4a02348c12c786a361a9958d9/tumblr_p7h20b3JLD1xnrvkgo1_500.jpg"]
     },
     {
         "name": "Bloodstone",
         "id": "bloodstone",
         "desc": "said to improve circulation and provide support to blood-related issues",
         "tags": ["green", "health", "protection", "courage"],
-        "img": [""]
+        "img": ["https://s15753.pcdn.co/wp-content/uploads/2021/03/Bloodstone_Small_Tumbled_1of3_3_2.jpg.optimal.jpg"]
     },
     {
         "name": "Tiger's Eye",
         "id": "tigers-eye",
         "desc": "said to provide motivation and lessen fear",
         "tags": ["brown", "wealth", "courage", "strength", "luck"],
-        "img": [""]
+        "img": ["https://cdn11.bigcommerce.com/s-74zp6w28re/images/stencil/1280x1280/products/5829/37039/new-moon-beginnings-tigers-eye-tumbled-stone-polished-tigers-eye-crystal-cts-aa283-parent__11883.1635554868.jpg?c=1"]
     },
     {
         "name": "Citrine",
         "id": "citrine",
         "desc": "believed to spark enthusiasm, creativity, and concentration",
         "tags": ["yellow", "wealth", "creativity", "clarity"],
-        "img": [""]
+        "img": ["https://trulyexperiences.com/blog/wp-content/uploads/2020/12/AdobeStock_107636583-842x561.jpeg"]
     },
     {
         "name": "Turquoise",
         "id": "turquoise",
         "desc": "thought to soothe emotions and attract good luck",
         "tags": ["blue", "wealth", "serenity", "protection", "luck"],
-        "img": [""]
+        "img": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_j3RPm6_N4GBVhr9xYiT1X9pE-NAcmgjVwA&usqp=CAU", "https://merriam-webster.com/assets/mw/images/article/art-wap-landing-mp-lg/alt-5cacc6c88ec7e-6352-df18e01631ad6bc9af7c18deb0359044@1x.jpg"]
     },
     {
         "name": "Sapphire",
         "id": "sapphire",
         "desc": "known as a stone of prosperity",
         "tags": ["blue", "wealth", "wisdom", "focus", "prosperity"],
-        "img": [""]
+        "img": ["https://cdn.shopify.com/s/files/1/1022/8121/articles/sapphire_2048x.png?v=1506344086", "https://cdn.msisurfaces.com/images/hardscaping/detail/sapphire-blue-fireglass.jpg"]
     },
     {
         "name": "Jade",
         "id": "jade",
         "desc": "well-known stone for prosperity and luck",
         "tags": ["green", "wealth", "prosperity", "luck"],
-        "img": [""]
+        "img": ["https://cdn.gatsbyjewellery.co.uk/wp-content/uploads/2021/06/Jade-scaled.jpg", "https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/01/jade-stone-1296x728-header.jpg?w=1155&h=1528"]
     },
     {
         "name": "Rose Quartz",

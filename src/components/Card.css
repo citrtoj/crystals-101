@@ -15,11 +15,36 @@
     color: var(--primary-bg-color);
 }
 
-.Card p, .Card a{
-    font-size: x-small;
+.Heart {
+    position: absolute;
+    left: -100vw;
+}
+  
+.forHeart {
+    cursor: pointer;
+    color: var(--primary-bg-color-light);
+    align-self: center;  
+    transition: color 0.2s ease-in-out;
 }
 
+.forHeart:hover {
+    color: rgb(241, 205, 205);
+}
+
+.forHeart::selection, .forHeart::moz-selection {
+    color: none;
+    background: transparent;
+}
+
+.Heart:checked + label.forHeart {
+    color: #e03d70;
+    will-change: font-size;
+    animation: var(--transition-duration) cubic-bezier(.17, .89, .32, 1.49);
+} 
+
 .Card-text-wrapper {
+    display: flex;
+    flex-direction: column;
     border: 1px solid rgb(0, 0, 0);
     min-height: 100%;
     margin: 0.5rem;
@@ -29,10 +54,10 @@
 }
 
 .Card h6 {
-    font-family: 'Space Mono', sans-serif;
+    font-family: var(--font-sans-serif);
     margin-top: 0.6em;
     margin-bottom: 0;
-    font-size: medium;
+    font-size: large;
 }
 
 .Card img {
@@ -45,12 +70,11 @@
 .Card-tag-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .Tag {
-    font-family: 'Space Mono', sans-serif;
+    font-family: var(--font-sans-serif);
     border: 1px solid black;
     font-size: 0.6rem;
     margin: 0.2rem;

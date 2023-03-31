@@ -2,10 +2,12 @@ import Card from '../components/Card'
 import img1 from '../media/rose-quartz.png'
 import img2 from '../media/amethyst.png'
 import img3 from '../media/esther-verdu-G3ttEY6r7J0-unsplash.jpg'
-
+import Navbar from '../components/Navbar'
 function Home() {
     return (
-        <div>
+        
+        <div className="">
+          <Navbar/>
           <div id="Home-fill-img" className="Wrapper-center">
             <div className="flex Wrapper-max-width">
               <div className="flex-column flex-justify-end">

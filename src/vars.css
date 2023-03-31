@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&family=Space+Mono:wght@400;700&display=swap');
+@import 'fonts.css';
 
 :root {
   --primary-bg-color: #7d79c3;
@@ -8,6 +9,9 @@
   --border-radius: 0.3rem;
   --padding: 3rem;
   --transition-duration: 0.5s;
+
+  --font-display: 'Cormorant Upright', serif;
+  --font-sans-serif: SF Pro Rounded, sans-serif;
 }
 
 .bg-light {
