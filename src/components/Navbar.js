@@ -15,7 +15,6 @@ const Navbar = () => {
             <div className='Wrapper-max-width'>
                 <a href="/" onClick={routeChange}>Home</a>
                 <a href="/filter" onClick={routeChange}>Filter</a>
-                <a href="/Contact" onClick={routeChange}>Contact</a>
             </div>
             
         </div>

@@ -6,6 +6,7 @@
   --primary-bg-color-light: #c5c3ed;
   --secondary-bg-color: #ffecd1;
   --primary-text-color: white;
+  --border: 1px solid black;
   --border-radius: 0.3rem;
   --padding: 3rem;
   --transition-duration: 0.5s;

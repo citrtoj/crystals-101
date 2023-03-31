@@ -1,6 +1,6 @@
 import './Card.css'
 import { useNavigate } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+
 function Card(props) {
     let path = '/crystal/' + props.id;
     let navigate = useNavigate(); 
@@ -10,20 +10,15 @@ function Card(props) {
     }
 
     const handleHeartCheck = (event) => {
-        console.log("checked: " + event.target.checked);
-        //first of all, change the STATUS of current check
-        //second of all, if id is in cookies, remove id
         let storedFavs = JSON.parse(localStorage.favs);
-        if (event.target.checked === false) { //urmeaza un unCheck
+        if (event.target.checked === false) {
             if (storedFavs.includes(props.id)) {
                 storedFavs = storedFavs.filter( (id) => id !== props.id );
-                console.log(storedFavs);
             }
         }
         else {
             if (!storedFavs.includes(props.id)) {
                 storedFavs = [...storedFavs, props.id];
-                console.log(storedFavs);
             }
         }
         localStorage.favs = JSON.stringify(storedFavs);
@@ -32,17 +27,23 @@ function Card(props) {
         if (localStorage.favs === undefined) {
             localStorage.favs = JSON.stringify([]);
         }
-        if (JSON.parse(localStorage.favs).includes(props.id)) {
-            return true;
-        }
-        else {
-            return false;
+        return (JSON.parse(localStorage.favs).includes(props.id));
+    }
+
+    const handleCardTagClick = (tag) => {
+        if (props.addTag !== undefined) {
+            props.addTag(tag);
+            window.scrollTo({
+                top: 0
+              });
         }
     }
 
     return (
-        <div style={{backgroundColor: `${props.color}` }}  className="Card" key={props.id}>
-            <img src={props.img} alt="card"/>
+        <div style={{backgroundColor: `${props.color}` }}  className="Card">
+            <div className="Img-4-3">
+                <img src={props.img} alt="card"/>
+            </div>
             <div className = "Card-text-wrapper">
                     <a href={path} onClick={routeChange}>
                         <h6>
@@ -55,7 +56,7 @@ function Card(props) {
                     {props.desc}
                 </p>
                 <div className="Card-tag-wrapper">
-                    {props.tags && props.tags.map(tag => <p key={tag} className="Tag"> {tag} </p> )}
+                    {props.tags && props.tags.map(tag => <p onClick={(e) => {handleCardTagClick(tag)}} key={tag} className="Tag">{tag}</p> )}
                 </div>
             </div>
         </div>

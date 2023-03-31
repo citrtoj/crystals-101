@@ -47,8 +47,8 @@
     flex-direction: column;
     border: 1px solid rgb(0, 0, 0);
     min-height: 100%;
-    margin: 0.5rem;
-    padding: 0.5rem;
+    margin: calc(var(--padding) / 6);
+    padding: calc(var(--padding) / 6);
     background-color: white;
     border-radius: var(--border-radius);
 }
@@ -60,11 +60,11 @@
     font-size: large;
 }
 
-.Card img {
-    padding: 1rem;
-    height: 100px;
-    object-fit: contain;
-    transition: 0.5s;
+.Card .Img-4-3 {
+    margin: calc(var(--padding) / 6);
+    margin-bottom: 0;
+    flex-shrink: 0;
+    border: 1px solid black;
 }
 
 .Card-tag-wrapper {
@@ -76,7 +76,7 @@
 .Tag {
     font-family: var(--font-sans-serif);
     border: 1px solid black;
-    font-size: 0.6rem;
+    font-size: small;
     margin: 0.2rem;
     background-color: var(--primary-bg-color);
     border-radius: var(--border-radius);

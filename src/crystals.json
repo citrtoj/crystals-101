@@ -56,7 +56,7 @@
         "id": "turquoise",
         "desc": "thought to soothe emotions and attract good luck",
         "tags": ["blue", "wealth", "serenity", "protection", "luck"],
-        "img": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_j3RPm6_N4GBVhr9xYiT1X9pE-NAcmgjVwA&usqp=CAU", "https://merriam-webster.com/assets/mw/images/article/art-wap-landing-mp-lg/alt-5cacc6c88ec7e-6352-df18e01631ad6bc9af7c18deb0359044@1x.jpg"]
+        "img": ["https://i0.wp.com/mygemstones.net/wp-content/uploads/2020/09/Raw-Turqoise-Crystals.jpg?fit=850%2C567&ssl=1", "https://cdn.shopify.com/s/files/1/0012/7339/7332/files/istockphoto-1140799531-612x612_1024x1024.jpg?v=1637317661"]
     },
     {
         "name": "Sapphire",
@@ -70,7 +70,7 @@
         "id": "jade",
         "desc": "well-known stone for prosperity and luck",
         "tags": ["green", "wealth", "prosperity", "luck"],
-        "img": ["https://cdn.gatsbyjewellery.co.uk/wp-content/uploads/2021/06/Jade-scaled.jpg", "https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/01/jade-stone-1296x728-header.jpg?w=1155&h=1528"]
+        "img": ["https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/01/jade-stone-1296x728-header.jpg?w=1155&h=1528", "http://cdn.ecommercedns.uk/files/3/239903/6/30570336/nephrite-jade-tumble-stones.jpg", "https://cdn.gatsbyjewellery.co.uk/wp-content/uploads/2021/06/Jade-scaled.jpg"]
     },
     {
         "name": "Rose Quartz",
@@ -84,13 +84,13 @@
         "id": "moonstone",
         "desc": "said to prompt feelings of inner strength and growth",
         "tags": ["clear", "love", "strength", "energy"],
-        "img": [""]
+        "img": ["https://cdn.shopify.com/s/files/1/0252/6937/0952/products/elevated-calm-moonstone-palm-b-3.jpg?v=1672354736", "https://cdn.shopify.com/s/files/1/1183/1076/files/different_shaped_moonstones_on_a_wooden_table.jpg?v=1651343067", "https://i.ebayimg.com/images/g/alwAAOSw5ehjNZnI/s-l1600.jpg"]
     },
     {
         "name": "Ruby",
         "id": "ruby",
         "desc": "believed to support sexuality and sensuality",
         "tags": ["red", "love", "sensuality"],
-        "img": [""]
+        "img": ["https://cdn.shopify.com/s/files/1/0313/3200/8069/files/Ruby_Gems_2048x2048.jpg?v=1625110637", "https://d3kinlcl20pxwz.cloudfront.net/wpblog/ruby-birthstone-featured-07-01.jpg", "https://img.freepik.com/premium-photo/shiny-crystals_724112-72.jpg"]
     }
 ]

@@ -1,6 +1,4 @@
 import Card from '../components/Card'
-import img1 from '../media/rose-quartz.png'
-import img2 from '../media/amethyst.png'
 import img3 from '../media/esther-verdu-G3ttEY6r7J0-unsplash.jpg'
 import Navbar from '../components/Navbar'
 function Home() {
@@ -21,12 +19,12 @@ function Home() {
               </div>
               <div className="flex-column">
                 <div className="Home-card-wrapper">
-                  <Card img={img1}
+                  <Card img={"https://e0.pxfuel.com/wallpapers/300/910/desktop-wallpaper-rose-quartz-for-phones-and-tablet-aesthetic-crystal.jpg"}
                         name="Rose Quartz"
                         id="rose-quartz"
                         desc="sometimes referred to as the stone of love and believed to encourage love and trust"
                         tags={["pink", "love", "trust", "health"]}/>
-                  <Card img={img2}
+                  <Card img={"https://images.squarespace-cdn.com/content/v1/5c59d36f9b8fe839e7009e6e/1550865327209-RBT5TR8L5HUH1G630SPQ/amethyst+brazil+%281%29.jpg?format=1500w"}
                         name="Amethyst"
                         id="amethyst"
                         desc="used for healing, purifying, and enhancing willpower"
@@ -56,14 +54,6 @@ Some people claim that crystals promote the flow of good energy and help rid you
 
 However, it’s important to know that there’s almost no scientific evidence to support the use of crystals. 
                 </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="Wrapper-center bg-light">
-            <div className="Wrapper-max-width">
-              <div className="flex-column">
-                <p>Test</p>
               </div>
             </div>
           </div>

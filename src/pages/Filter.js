@@ -10,38 +10,35 @@ function Filter() {
     const [tags, setTags] = useState([])
     const [availableTags, setAvailableTags] = useState([])
     const [items, setItems] = useState([])
-    const [cookies, setCookies] = useState();
+    const [filterFavs, setFilterFavs] = useState(false);
 
-    useEffect( () => {
-      return () => {
-
+    const addTag = (tag) => {
+      if (availableTags.includes(tag) && !tags.includes(tag)) {
+          setTags([...tags, tag]);
       }
-    }, [])
+    }
 
     useEffect( () => {
-      //preluam arrayurile de la fiecare cristal, le mergeuim cu flat cu depth 1, le transformam in Set (multime) si le spreaduim inapoi intr un array
+      document.getElementById("favs-checkbox").checked = filterFavs;
+    }, [filterFavs]); 
+
+    useEffect( () => {
       setAvailableTags([...new Set(crystals.map( (crystal) => crystal.tags).flat(1))])
     }, [tags] )
 
     useEffect( () => {
         //populate Cards with, well, cards
         let items = crystals;
-        if (tags.length === 0) {
-            items = items.filter( (value) => {
-            value = value.name.toLowerCase();
-            let keyword = name.toLowerCase();
-            return (value.indexOf(keyword) !== -1);
+        items = items.filter( (item) => {
+              let value = item.name.toLowerCase();
+              let keyword = name.toLowerCase();
+              return (value.indexOf(keyword) !== -1
+              && ( tags.length > 0 ? tags.every(v => item.tags.includes(v)) : true)
+              && ( filterFavs === true ? JSON.parse(localStorage.favs).includes(item.id)  : true)
+              );
           } )
-        }
-        else {
-          items = items.filter( (item) => {
-            let value = item.name.toLowerCase();
-            let searchedValue = name.toLowerCase();
-            return (value.indexOf(searchedValue) !== -1 && tags.every(v => item.tags.includes(v)));
-          } )
-        }
         setItems(items);
-    }, [name, tags] )
+    }, [name, tags, filterFavs] )
 
     return (
       <>
@@ -60,13 +57,16 @@ function Filter() {
           tags={tags}
           setTags={setTags}
           availableTags={availableTags}
+          addTag={addTag}
+          filterFavs={filterFavs}
+          setFilterFavs={setFilterFavs}
         />
         </div>
         <div className="Filter-card-wrapper">
           {items.map( (item) => {
             const {name, id, desc, tags, img} = item;
             return (
-              <Card name={name} id={id} desc={desc} tags={tags} img={img}/>
+              <Card addTag={addTag} name={name} id={id} desc={desc} tags={tags} img={img} key={id}/>
             )
           } )}
         </div>

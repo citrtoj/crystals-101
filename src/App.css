@@ -37,16 +37,17 @@ p, a, button{
 button {
   background-color: var(--primary-bg-color-light);
   padding: 1em;
-  border: 1px solid black;
+  border: var(--border);
   border-radius: 5em;
+  cursor: pointer;
 }
 
-input {
+input[type="text"] {
   all: unset;
   font-family: var(--font-sans-serif);
 }
 
-input:focus {
+input[type="text"]:focus, input[type="checkbox"]:focus {
   outline: none;
 }
 
@@ -157,7 +158,7 @@ input:focus {
   height: 3px;
   background-color: white;
   color: white;
-  border:1px solid black;
+  border:var(--border);
 }
 
 #Home-title-h1 {
@@ -190,7 +191,7 @@ input:focus {
   transform: rotate(3deg);
 }
 
-.Filter {
+.transition {
   transition: 0.5s;
 }
 
@@ -217,10 +218,17 @@ input:focus {
   margin: calc(var(--padding) / 4);
 }
 
+    
+.Card-tag-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;   
+}
+
 .Img-wrapper {
   overflow: hidden;
   display: flex;
-  border:1px solid black;
+  border:var(--border);
   border-radius: var(--border-radius);
 }
 
@@ -233,14 +241,14 @@ input:focus {
   display: flex;
   flex-direction: column;
   background-color: var(--primary-bg-color-light);
-  border: 2px solid white;
+  border: var(--border);
   border-radius: 5px;
   overflow: hidden;
-  padding: calc(var(--padding) / 2);
+  padding: calc(var(--padding) / 4);
 }
 
 .Img-mini-list {
-  margin-top: calc(var(--padding) / 2);
+  margin-top: calc(var(--padding) / 4);
   display: flex;
 }
 .Img-mini-list > *{
@@ -259,7 +267,7 @@ input:focus {
 
 .Img-square {
   aspect-ratio: 1 / 1;
-  border: 2px solid white;
+  border: var(--border);
   border-radius: 5px;
   overflow: hidden;
   display: flex;
@@ -267,7 +275,7 @@ input:focus {
 
 .Img-4-3 {
   aspect-ratio: 4/3;
-  border: 2px solid white;
+  border: var(--border);
   border-radius: 5px;
   overflow: hidden;
   display: flex;
@@ -276,6 +284,16 @@ input:focus {
 .Img-4-3 img, .Img-square img {
   object-fit: cover;
   width: 100%;
+}
+
+.tags-no-click .Tag {
+  background-color: var(--primary-bg-color-light);
+  color: black;
+}
+
+
+.tags-no-click .Tag:hover {
+  cursor: default;
 }
 
 .Not-found {
@@ -301,7 +319,7 @@ input.Filter-search-input {
   padding: 0.8rem;
   background-color: rgb(255, 255, 255);
   border-radius: var(--border-radius);
-  border: 1px solid black;
+  border: var(--border);
 }
 
 .Search-boxes-wrapper {
