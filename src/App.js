@@ -1,5 +1,6 @@
 import './App.css';
-import Home from './pages/Home';
+import Home from './pages/Homepage';
+import About from './pages/About';
 import Crystal from './pages/Crystal'
 import Filter from './pages/Filter';
 import NotFound from './pages/NotFound'
@@ -17,6 +18,7 @@ function App() {
         <Router>
           <Routes>
             <Route exact path="/" element={<Home/>}/>
+            <Route exact path="/about" element={<About/>}/>
             <Route exact path="/crystal/:id" element={<Crystal/>}/>
             <Route exact path="/filter" element={<Filter/>}/>
             <Route exact path="/404" element={<NotFound/>}/>

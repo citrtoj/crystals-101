@@ -8,7 +8,7 @@ function NotFound() {
     }
 
     return (
-        <div className="Not-found">
+        <div className="Page-center-wrapper">
             <h1>Oops!</h1>
             <p>We couldn't find what you were looking for.</p>
             <button onClick={handleClick}>Home</button>

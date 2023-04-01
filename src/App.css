@@ -42,6 +42,13 @@ button {
   border: var(--border);
   border-radius: 5em;
   cursor: pointer;
+  transition: var(--transition-duration);
+  color: white;
+}
+
+button:hover {
+  
+  background-color: var(--secondary-bg-color);
 }
 
 input[type="text"] {
@@ -173,6 +180,9 @@ input[type="text"]:focus, input[type="checkbox"]:focus {
 #Home-title-h1 {
   font-size: 4rem;
   margin: 0;
+}
+
+.text-glow {
   text-shadow: 0px 0px 5px white;
 }
 
@@ -295,9 +305,16 @@ input[type="text"]:focus, input[type="checkbox"]:focus {
   width: 100%;
 }
 
+.tags-no-click  {
+  flex: unset;
+  height: min-content;
+}
+
 .tags-no-click .Tag {
   background-color: var(--primary-bg-color-light);
   color: black;
+  flex: unset;
+  height: min-content;
 }
 
 
@@ -305,16 +322,22 @@ input[type="text"]:focus, input[type="checkbox"]:focus {
   cursor: default;
 }
 
-.Not-found {
+.Filter-footer {
+  flex-direction: column;
+  margin-bottom: var(--padding);
+  transition: var(--transition-duration);
+}
+
+.Page-center-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - var(--navbar-height));
 }
 
-.Not-found * {
+.Page-center-wrapper * {
   margin: 1rem;
 }
 

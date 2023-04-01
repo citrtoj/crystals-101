@@ -3,12 +3,13 @@
 
 :root {
   --primary-bg-color: #7d79c3;
-  --primary-bg-color-light: #c5c3ed;
-  --secondary-bg-color: #ffecd1;
+  --primary-bg-color-light: #a7a4e7;
+  --secondary-bg-color: #cdcbec;
   --primary-text-color: white;
   --border: 1px solid black;
   --border-radius: 0.3rem;
   --padding: 3rem;
+  --navbar-height: 48px;
   --transition-duration: 0.5s;
 
   --font-display: 'Cormorant Upright', serif;

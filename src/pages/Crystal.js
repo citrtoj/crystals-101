@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import crystals from '../crystals.json'
 import NotFound from './NotFound'
@@ -52,6 +52,11 @@ function Crystal() {
     function handleClick(event) {
       setIdx(event.target.parentElement.id.split('-')[1]);
     }
+    
+    let navigate = useNavigate();
+    function handleClickFilterButton() {
+          navigate('/filter')
+    }
 
     if (!found) {
       return (<NotFound/>)
@@ -60,7 +65,7 @@ function Crystal() {
       return (
           <>
           <Navbar/>
-          <div className={`${loaded ? "show" : "hide" } transition Wrapper-max-width justify-center align-center flex flex-equal-width height-100 column-on-mobile` }>
+          <div className={`${loaded ? "show" : "hide" } transition Wrapper-max-width justify-center align-center flex flex-equal-width column-on-mobile` }>
             <div className="flex-column justify-center">
               <div className="Img-main-wrapper">
                 <div className="Img-4-3">
@@ -78,8 +83,8 @@ function Crystal() {
                 </div>
               </div>
             </div>
-            <div className="flex-column justify-center">
-              <h1>
+            <div className="flex-column">
+              <h1 className='text-glow'>
                 {item.name}
               </h1>
               <div className="tags tags-no-click flex">
@@ -95,6 +100,10 @@ function Crystal() {
               
             </div>
           </div>   
+          <div className={`${loaded ? "show" : "hide" } flex Filter-footer`}>
+            <p>Check out other similar crystals:</p>
+            <button onClick={handleClickFilterButton}>Filter</button>
+          </div>
           </>
       )
     }

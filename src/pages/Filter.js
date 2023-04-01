@@ -46,7 +46,7 @@ function Filter() {
         <div className='Wrapper-max-width'>
         <div className="Search-boxes-wrapper">
         <input
-            placeholder="Type ahead!"
+            placeholder="Type name here..."
             type="text"
             name="search-input"
             className="Filter-search-input"
