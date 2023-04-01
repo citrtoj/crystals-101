@@ -1,6 +1,4 @@
 # Crystals 101
-AKA me throwing myself into using React without reading any documentation, watching any beginner tutorial, or learning about the base principles of React beforehand. Because I couldn't make myself do this any other way, and I needed to pick up React *somehow*.
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and is inspired by [this](https://www.healthline.com/health/mental-health/guide-to-healing-crystals) Healthline article.
 
 ## Available Scripts
