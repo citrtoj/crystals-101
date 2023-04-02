@@ -89,7 +89,7 @@ function Crystal() {
               </h1>
               <div className="tags tags-no-click flex">
                 {item && item.tags.map( (tag) => (
-                  <div className='Tag'>
+                  <div key={tag} className='Tag'>
                       {tag}
                     </div>)
                 ) }
